@@ -65,7 +65,7 @@ class Maze:
         self.drawMapImage()
         self.drawBlock(self.startNode.pos(), (255, 0, 0))
         self.drawBlock(self.endNode.pos(), (255, 0, 0))
-        self.image.save('maze.jpg')
+        self.image.save('DFS_maze.jpg')
 
     def InitImage(self, _color=(100, 100, 100)):
         for i in range(self.map_h+1):
@@ -188,5 +188,5 @@ def BFS(m: Maze):
 if __name__ == '__main__':
     m = Maze()
     BFS(m)
-    m.image.save('answer.jpg')
+    m.image.save('DFS_answer_by_BFS.jpg')
     #m.show()
